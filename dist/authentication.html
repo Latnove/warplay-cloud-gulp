@@ -1,1 +1,175 @@
-<!DOCTYPE html><html lang="ru"><!-- HEAD --><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="description" content="Компания - WARPLAY.CLOUD. Это уникальный сервис в котором мы предоставляем вам полный доступ к виртуальному компьютеру. Вы можете скачивать любые игры, а также запускать требовательные программы."><link rel="stylesheet" href="./css/authentication.min.css"><title>WARPLAY.CLOUD</title></head><body><!-- authorization or registration --><section class="authentication registration"><div class="container authentication__container"><div class="authentication__title"><a href="index.html" class="close-button authentication__close"><img src="img/close-image.svg" alt="Link to main page"> </a><a href="#" class="authentication__record"><h2 class="title">Регистрация</h2></a><a href="#" class="authentication__entry"><h2 class="title">Вход</h2></a></div><form class="authentication__form" action=""><input type="text" name="email" placeholder="Почта / Телефон" class="authentication__form-input" required> <input type="password" name="password" placeholder="Пароль" minlength="6" class="authentication__form-input" required> <span class="text authentication__text-error"></span><div class="authentication__form-footer"><button type="submit" class="button authentication__submit">Зарегистрироваться</button><div class="authentication__agreement"><label class="authentication__checked"><input id="promo" type="checkbox" required> <label></label></label> <label for="promo" class="text authentication__text">Я соглашаюсь со следующими установленными правилами: Политика использования файлов cookie WARPLAY.CLOUD, Пользовательское соглашение WARPLAY.CLOUD, Лицензионное соглашение MY.GAMES с конечным пользователем в отношении Игр, Лицензионное соглашение с конечным Пользователем для WARPLAY.CLOUD Игрового центра, Политика конфиденциальности портала WARPLAY.CLOUD, Политика конфиденциальности WARPLAY.CLOUD для детей.</label> <label for="promo" class="text authentication__text" style="display: none">Запомнить</label></div></div></form><div class="authentication__footer"><span class="text authentication__footer-title">Войти через</span><div class="authentication__footer-list"><a href="#" class="authentication__footer-item"><img src="img/auth-mailru.svg" alt="Mail.ru logo"> </a><a href="#" class="authentication__footer-item"><img src="img/auth-vkcom.svg" alt="Vk.com logo"> </a><a href="#" class="authentication__footer-item"><img src="img/auth-ok.svg" alt="Ok.ru logo"> </a><a href="#" class="authentication__footer-item"><img src="img/auth-facebook.svg" alt="Facebook logo"> </a><a href="#" class="authentication__footer-item"><img src="img/auth-google.svg" alt="Google logo"> </a><a href="#" class="authentication__footer-item"><img src="img/auth-twitch.svg" alt="Twitch logo"> </a><a href="#" class="authentication__footer-item"><img src="img/auth-twitter.svg" alt="Twitter logo"> </a><a href="#" class="authentication__footer-item"><img src="img/auth-apple.svg" alt="Apple logo"></a></div></div></div><div class="container authentication__tariffs tariffs__container"><div class="authentication__title"><a href="authentication.html" class="close-button authentication__close"><img src="img/close-image.svg" alt="Link to authentication"></a><h2 class="title">Доступные подписки</h2></div><div class="tariffs__cards cards"><div class="cards__item cards__item--hourly"><div class="cards__content"><h3 class="cards__title">Почасовая оплата</h3><h4 class="cards__subtitle">45 р. - час</h4><div class="text cards__text"><p>Доступно:</p><p>Каталог игр</p><p>Виртуальный ПК</p><p>Безлимитная игровая сессия</p></div></div><a href="authentication.html" class="button cards__button">Выбрать</a></div><div class="cards__item cards__item--maximum"><div class="cards__content"><h3 class="cards__title">Подписка Максимум</h3><h4 class="cards__subtitle">2999 р. - месяц</h4><div class="text cards__text"><p>Доступно:</p><p>Каталог игр</p><p>Виртуальный ПК</p><p>Игровая сессия 10 часов/день</p></div></div><a href="authentication.html" class="button cards__button">Выбрать</a></div><div class="cards__item cards__item--minimum"><div class="cards__content"><h3 class="cards__title">Подписка Минимум</h3><h4 class="cards__subtitle">1500 р. - месяц</h4><div class="text cards__text"><p>Доступно:</p><p>Каталог игр</p><p>Игровая сессия 4 часа/день</p></div></div><a href="authentication.html" class="button cards__button">Выбрать</a></div></div></div></section><script type="module" src="js/authentication.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- HEAD -->
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta
+    name="description"
+    content="Компания - WARPLAY.CLOUD. Это уникальный сервис в котором мы предоставляем вам полный доступ к виртуальному компьютеру. Вы можете скачивать любые игры, а также запускать требовательные программы."
+  />
+  <link rel="stylesheet" href="./css/authentication.min.css" />
+  <title>WARPLAY.CLOUD</title>
+</head>
+
+
+  <body>
+    <!-- authorization or registration -->
+    <section class="authentication registration">
+      <div class="container authentication__container">
+        <div class="authentication__title">
+          <a href="index.html" class="close-button authentication__close">
+            <img src="img/close-image.svg" alt="Link to main page" />
+          </a>
+
+          <a href="#" class="authentication__record">
+            <h2 class="title">Регистрация</h2>
+          </a>
+
+          <a href="#" class="authentication__entry">
+            <h2 class="title">Вход</h2>
+          </a>
+        </div>
+
+        <form class="authentication__form" action="">
+          <input
+            type="text"
+            name="email"
+            placeholder="Почта / Телефон"
+            class="authentication__form-input"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Пароль"
+            minlength="6"
+            class="authentication__form-input"
+            required
+          />
+
+          <span class="text authentication__text-error"></span>
+
+          <div class="authentication__form-footer">
+            <button type="submit" class="button authentication__submit">
+              Зарегистрироваться
+            </button>
+
+            <div class="authentication__agreement">
+              <label class="authentication__checked">
+                <input id="promo" type="checkbox" required />
+                <label></label>
+              </label>
+
+              <label for="promo" class="text authentication__text">
+                Я соглашаюсь со следующими установленными правилами: Политика
+                использования файлов cookie WARPLAY.CLOUD, Пользовательское
+                соглашение WARPLAY.CLOUD, Лицензионное соглашение MY.GAMES с
+                конечным пользователем в отношении Игр, Лицензионное соглашение
+                с конечным Пользователем для WARPLAY.CLOUD Игрового центра,
+                Политика конфиденциальности портала WARPLAY.CLOUD, Политика
+                конфиденциальности WARPLAY.CLOUD для детей.
+              </label>
+
+              <label
+                for="promo"
+                class="text authentication__text"
+                style="display: none"
+              >
+                Запомнить
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <div class="authentication__footer">
+          <span class="text authentication__footer-title">Войти через</span>
+
+          <div class="authentication__footer-list">
+            <a href="#" class="authentication__footer-item">
+  <img src="img/auth-mailru.svg" alt="Mail.ru logo" />
+</a>
+<a href="#" class="authentication__footer-item">
+  <img src="img/auth-vkcom.svg" alt="Vk.com logo" />
+</a>
+<a href="#" class="authentication__footer-item">
+  <img src="img/auth-ok.svg" alt="Ok.ru logo" />
+</a>
+<a href="#" class="authentication__footer-item">
+  <img src="img/auth-facebook.svg" alt="Facebook logo" />
+</a>
+<a href="#" class="authentication__footer-item">
+  <img src="img/auth-google.svg" alt="Google logo" />
+</a>
+<a href="#" class="authentication__footer-item">
+  <img src="img/auth-twitch.svg" alt="Twitch logo" />
+</a>
+<a href="#" class="authentication__footer-item">
+  <img src="img/auth-twitter.svg" alt="Twitter logo" />
+</a>
+<a href="#" class="authentication__footer-item">
+  <img src="img/auth-apple.svg" alt="Apple logo" />
+</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container authentication__tariffs tariffs__container">
+        <div class="authentication__title">
+          <a
+            href="authentication.html"
+            class="close-button authentication__close"
+          >
+            <img src="img/close-image.svg" alt="Link to authentication" />
+          </a>
+          <h2 class="title">Доступные подписки</h2>
+        </div>
+        <div class="tariffs__cards cards">
+          <div class="cards__item cards__item--hourly">
+  <div class="cards__content">
+    <h3 class="cards__title">Почасовая оплата</h3>
+    <h4 class="cards__subtitle">45 р. - час</h4>
+    <div class="text cards__text">
+      <p>Доступно:</p>
+      <p>Каталог игр</p>
+<p>Виртуальный ПК</p>
+<p>Безлимитная игровая сессия</p>
+    </div>
+  </div>
+  <a href="authentication.html" class="button cards__button">Выбрать</a>
+</div>
+<div class="cards__item cards__item--maximum">
+  <div class="cards__content">
+    <h3 class="cards__title">Подписка Максимум</h3>
+    <h4 class="cards__subtitle">2999 р. - месяц</h4>
+    <div class="text cards__text">
+      <p>Доступно:</p>
+      <p>Каталог игр</p>
+<p>Виртуальный ПК</p>
+<p>Игровая сессия 10 часов/день</p>
+    </div>
+  </div>
+  <a href="authentication.html" class="button cards__button">Выбрать</a>
+</div>
+<div class="cards__item cards__item--minimum">
+  <div class="cards__content">
+    <h3 class="cards__title">Подписка Минимум</h3>
+    <h4 class="cards__subtitle">1500 р. - месяц</h4>
+    <div class="text cards__text">
+      <p>Доступно:</p>
+      <p>Каталог игр</p>
+<p>Игровая сессия 4 часа/день</p>
+    </div>
+  </div>
+  <a href="authentication.html" class="button cards__button">Выбрать</a>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="js/authentication.js"></script>
+  </body>
+</html>

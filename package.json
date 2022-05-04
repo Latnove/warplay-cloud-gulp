@@ -18,7 +18,6 @@
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
-    "firebase": "^9.7.0",
     "gh-pages": "^3.2.3",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
