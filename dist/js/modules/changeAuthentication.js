@@ -18,7 +18,7 @@ export const changeAuthentication = () => {
     agreementTextEls[0].style.display = "block";
     agreementTextEls[1].style.display = "none";
     checkboxEl.checked = false;
-    checkboxEl.getAttribute("required");
+    checkboxEl.setAttribute("required", "");
     textErrorEl.textContent = "";
 
     // Account create
