@@ -1,0 +1,22 @@
+[
+  {
+    "fileRef": "../img/windows.svg",
+    "imgRef": "../img/windows.svg",
+    "imgAlt": "Windows logo"
+  },
+  {
+    "fileRef": "../img/apple.svg",
+    "imgRef": "../img/apple.svg",
+    "imgAlt": "Apple logo"
+  },
+  {
+    "fileRef": "../img/linux.svg",
+    "imgRef": "../img/linux.svg",
+    "imgAlt": "Linux logo"
+  },
+  {
+    "fileRef": "../img/chrome.svg",
+    "imgRef": "../img/chrome.svg",
+    "imgAlt": "Chrome logo"
+  }
+]

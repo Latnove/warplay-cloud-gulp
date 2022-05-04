@@ -1,0 +1,145 @@
+html {
+  &:root {
+    --color-bg: #11171e;
+    --color-blue: #00c5ff;
+    --color-light-blue: #57d6ff;
+    --color-dark-blue: #50afcd;
+    --color-gray: #ababab;
+    --color-dark-gray: #838383;
+    --color-light-gray: #f1f1f1;
+    --color-white: #ffffff;
+    --color-dark-white: #ececec;
+    --color-dark: #141c24;
+    --color-light-dark: #1f2631;
+    --color-black: #000000;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+nav {
+  color: var(--color-white);
+}
+
+section:not(.main) {
+  padding-top: 40px;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px !important;
+}
+
+.text {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+  color: var(--color-gray);
+}
+
+.block-subtitle {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  margin-bottom: 1em;
+  color: var(--color-light-blue);
+  padding-left: 5.3125em;
+  position: relative;
+
+  @media (max-width: 430px) {
+    padding-left: 4.9em;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 3.125em;
+    height: 0px;
+    border: 1px solid var(--color-light-blue);
+
+    @media (max-width: 430px) {
+      width: 2.9em;
+    }
+  }
+}
+
+.link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  padding-bottom: 0.32em;
+  border-bottom: 1px solid var(--color-blue);
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.title {
+  font-family: AireExterior;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 100%;
+  color: var(--color-white);
+}
+
+.button {
+  font-family: AireExterior;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--color-dark);
+  background: var(--color-blue);
+}
+
+.site-logo {
+  fill: var(--color-dark-white);
+  color: var(--color-dark-white);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__image {
+    width: 48px;
+    height: 37.5px;
+    margin-right: 25px;
+
+    @media (max-width: 1200px) {
+      margin-right: 17.5px;
+    }
+  }
+
+  &__text {
+    font-family: PulsarOriginal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding-top: 2.5px;
+
+    @media (max-width: 767px) {
+      font-size: 22px;
+      padding-top: 4px;
+    }
+  }
+}
+
+.close-button {
+  min-width: 13px;
+  height: 24px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

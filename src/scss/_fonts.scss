@@ -1,0 +1,19 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    src: url("#{$file-path}.eot");
+    src: local("☺"), url("#{$file-path}.woff2") format("woff2"),
+      url("#{$file-path}.woff") format("woff"),
+      url("#{$file-path}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+@include font-face("AireExterior", "../fonts/AireExterior");
+@include font-face("PulsarOriginal", "../fonts/Pulsar-Original");
+@include font-face("Roboto", "../fonts/Roboto-Light", 300);
+@include font-face("Roboto", "../fonts/Roboto-Regular", 400);
+@include font-face("Roboto", "../fonts/Roboto-Medium", 500);
+@include font-face("Roboto", "../fonts/Roboto-Bold", 700);

@@ -1,0 +1,10 @@
+<section id="tariffs" class="tariffs">
+  <div class="container tariffs__container">
+    <h3 class="block-subtitle tariffs__subtitle">Гибкие тарифы</h3>
+    <h2 class="title tariffs__title">Доступные подписки</h2>
+    <div class="tariffs__cards cards">
+      @@loop('./components/_tariffs-item.html', '../data-json/tariffs.json')
+    </div>
+    <span class="tariffs__line"></span>
+  </div>
+</section>

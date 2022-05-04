@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./_head.html', { "title": "WARPLAY.CLOUD", "styleRef":
+  "download.min.css"})
+
+  <body>
+    <section class="download">
+      <div class="container download__container">
+        <div class="download__title">
+          <a href="index.html" class="close-button download__close-button">
+            <img src="../img/close-image.svg" alt="Link to main page" />
+          </a>
+          <h2 class="title">Выберите операционную систему</h2>
+        </div>
+
+        <div class="download__list">
+          @@loop('./components/_download-item.html',
+          '../data-json/download.json')
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "name": "warplay-cloud-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp --production",
+    "deploy": "gh-pages -d dist"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "firebase": "^9.7.0",
+    "gh-pages": "^3.2.3",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "latest",
+    "gulp-file-include": "latest",
+    "gulp-fonter": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-shorthand": "latest",
+    "gulp-size": "latest",
+    "gulp-ttf2woff2": "latest",
+    "gulp-webp": "latest",
+    "gulp-webp-css": "latest",
+    "gulp-webp-html-nosvg-lv": "^1.0.0",
+    "imask": "^6.4.2",
+    "sass": "latest",
+    "swiper": "^8.0.7",
+    "webpack": "latest"
+  }
+}

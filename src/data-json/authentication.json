@@ -1,0 +1,34 @@
+[
+  {
+    "imgRef": "../img/auth-mailru.svg",
+    "imgAlt": "Mail.ru logo"
+  },
+  {
+    "imgRef": "../img/auth-vkcom.svg",
+    "imgAlt": "Vk.com logo"
+  },
+  {
+    "imgRef": "../img/auth-ok.svg",
+    "imgAlt": "Ok.ru logo"
+  },
+  {
+    "imgRef": "../img/auth-facebook.svg",
+    "imgAlt": "Facebook logo"
+  },
+  {
+    "imgRef": "../img/auth-google.svg",
+    "imgAlt": "Google logo"
+  },
+  {
+    "imgRef": "../img/auth-twitch.svg",
+    "imgAlt": "Twitch logo"
+  },
+  {
+    "imgRef": "../img/auth-twitter.svg",
+    "imgAlt": "Twitter logo"
+  },
+  {
+    "imgRef": "../img/auth-apple.svg",
+    "imgAlt": "Apple logo"
+  }
+]

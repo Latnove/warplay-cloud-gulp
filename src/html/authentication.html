@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- HEAD -->
+  @@include('./_head.html', { "title": "WARPLAY.CLOUD", "styleRef":
+  "authentication.min.css" })
+
+  <body>
+    <!-- authorization or registration -->
+    <section class="authentication registration">
+      <div class="container authentication__container">
+        <div class="authentication__title">
+          <a href="index.html" class="close-button authentication__close">
+            <img src="../img/close-image.svg" alt="Link to main page" />
+          </a>
+
+          <a href="#" class="authentication__record">
+            <h2 class="title">Регистрация</h2>
+          </a>
+
+          <a href="#" class="authentication__entry">
+            <h2 class="title">Вход</h2>
+          </a>
+        </div>
+
+        <form class="authentication__form" action="">
+          <input
+            type="text"
+            name="email"
+            placeholder="Почта / Телефон"
+            class="authentication__form-input"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Пароль"
+            minlength="6"
+            class="authentication__form-input"
+            required
+          />
+
+          <span class="text authentication__text-error"></span>
+
+          <div class="authentication__form-footer">
+            <button type="submit" class="button authentication__submit">
+              Зарегистрироваться
+            </button>
+
+            <div class="authentication__agreement">
+              <label class="authentication__checked">
+                <input id="promo" type="checkbox" required />
+                <label></label>
+              </label>
+
+              <label for="promo" class="text authentication__text">
+                Я соглашаюсь со следующими установленными правилами: Политика
+                использования файлов cookie WARPLAY.CLOUD, Пользовательское
+                соглашение WARPLAY.CLOUD, Лицензионное соглашение MY.GAMES с
+                конечным пользователем в отношении Игр, Лицензионное соглашение
+                с конечным Пользователем для WARPLAY.CLOUD Игрового центра,
+                Политика конфиденциальности портала WARPLAY.CLOUD, Политика
+                конфиденциальности WARPLAY.CLOUD для детей.
+              </label>
+
+              <label
+                for="promo"
+                class="text authentication__text"
+                style="display: none"
+              >
+                Запомнить
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <div class="authentication__footer">
+          <span class="text authentication__footer-title">Войти через</span>
+
+          <div class="authentication__footer-list">
+            @@loop('./components/_authentication-item.html',
+            '../data-json/authentication.json')
+          </div>
+        </div>
+      </div>
+
+      <div class="container authentication__tariffs tariffs__container">
+        <div class="authentication__title">
+          <a
+            href="authentication.html"
+            class="close-button authentication__close"
+          >
+            <img src="../img/close-image.svg" alt="Link to authentication" />
+          </a>
+          <h2 class="title">Доступные подписки</h2>
+        </div>
+        <div class="tariffs__cards cards">
+          @@loop('./components/_tariffs-item.html', '../data-json/tariffs.json')
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="../js/authentication.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+[
+  {
+    "imgRef": "../img/mail-contact.png",
+
+    "imgAlt": "Mail Contact",
+    "text": "Cоздайте аккаунт"
+  },
+  {
+    "imgRef": "../img/download.png",
+    "imgAlt": "Download from the Cloud",
+    "text": "Cкачайте модуль"
+  },
+  {
+    "imgRef": "../img/pc-with-joystick.png",
+
+    "imgAlt": "PC with joystick",
+    "text": "Выберите тариф"
+  },
+  {
+    "imgRef": "../img/apple-arcade.png",
+
+    "imgAlt": "Apple Arcade",
+    "text": "Начни играть"
+  }
+]
